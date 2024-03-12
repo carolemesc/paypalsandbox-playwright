@@ -1,0 +1,128 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Carol Lemes\\Documents\\2. Cursos\\playwright-paypalsandbox\\paypalsandbox-playwright\\playwright.config.js",
+    "rootDir": "C:/Users/Carol Lemes/Documents/2. Cursos/playwright-paypalsandbox/paypalsandbox-playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "blob",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Carol Lemes/Documents/2. Cursos/playwright-paypalsandbox/paypalsandbox-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Carol Lemes/Documents/2. Cursos/playwright-paypalsandbox/paypalsandbox-playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.42.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "nome",
+          "file": "login.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Deve ser possível logar com um usuário existente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8312,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "usuario teste:  carol@yopmail.com\n"
+                        },
+                        {
+                          "text": "senha teste:  @123@123\n"
+                        },
+                        {
+                          "text": "usuario funcao:  carol@yopmail.com\n"
+                        },
+                        {
+                          "text": "senha funcao:  carol@yopmail.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-12T21:17:00.777Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-998e8abda41117911dd7",
+              "file": "login.spec.js",
+              "line": 14,
+              "column": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-03-12T21:16:59.865Z",
+    "duration": 10633.734,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

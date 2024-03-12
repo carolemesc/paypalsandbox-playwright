@@ -1,0 +1,22 @@
+{
+  "name": "paypalsandbox-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolemesc/paypalsandbox-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolemesc/paypalsandbox-playwright/issues"
+  },
+  "homepage": "https://github.com/carolemesc/paypalsandbox-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.26"
+  }
+}
