@@ -1,22 +1,40 @@
 import { test, expect } from '@playwright/test'
 import data from '../fixtures/data'
-import Login from '../fixtures/login'
-import login from '../fixtures/login'
+import login from '../actions/login'
+import { faker } from '@faker-js/faker'
 
 /** @type {import('@playwright/test').Page} */
 let page
 
-test.beforeAll(async ({ browser }) => {
+test.beforeEach(async ({ browser }) => {
     page = await browser.newPage()
+    await page.goto(data.APP.URL)
+    await page.waitForURL(data.APP.URL)
+    const Cookie = await login(page)
+    await Cookie.addCookie(page)
 })
 
-test.describe('nome', () => {
-    test.only('Deve ser possível logar com um usuário existente', async () => {
+test.afterEach(async () => {
+    await page.close()
+})
+
+test.describe('Login', () => {
+    test('Deve ser possível logar com um usuário existente', async () => {
         const user = `${data.USER.EMAIL}`
         const password = `${data.USER.PASSWORD}`
-        console.log('usuario teste: ', user);
-        console.log('senha teste: ', password);
         const Login = await login(page)
-        await Login.loginWithValidUser(user, password)
+        await Login.loginWithUser(user, password)
+        await page.waitForURL('**/myaccount/**')
+    })
+
+    test('Não deve ser possível logar com um usuário não cadastrado', async () => {
+        const user = faker.internet.userName()
+        const password = faker.internet.password()
+        const Login = await login(page)
+        await Login.loginWithUser(user, password)
+        await expect(page
+            .locator('.notification-critical:has-text("Alguns dados informados estão incorretos. Tente novamente.")')
+            .first()
+        ).toBeVisible()
     })
 })

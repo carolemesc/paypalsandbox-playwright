@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -35,7 +35,7 @@
       {
         "outputDir": "C:/Users/Carol Lemes/Documents/2. Cursos/playwright-paypalsandbox/paypalsandbox-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 3,
         "id": "chromium",
         "name": "chromium",
         "testDir": "C:/Users/Carol Lemes/Documents/2. Cursos/playwright-paypalsandbox/paypalsandbox-playwright/tests",
@@ -54,6 +54,358 @@
   },
   "suites": [
     {
+      "title": "create-account.spec.js",
+      "file": "create-account.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Criação de conta válida",
+          "file": "create-account.spec.js",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Deve ser possível criar uma conta gratuitamente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 27283,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:10.298Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-c54ce5643007fd89c1f2",
+              "file": "create-account.spec.js",
+              "line": 22,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Criação de conta inválida",
+          "file": "create-account.spec.js",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Não deve ser possível criar uma conta com endereço de email inválido",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 11937,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:10.282Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-dde28ed300b70b8356f3",
+              "file": "create-account.spec.js",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível criar uma conta com número de telefone inválido",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 13143,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:10.307Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-3edda3f2dbcddd1fc7e4",
+              "file": "create-account.spec.js",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível criar uma conta com código de confirmação incorreto",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 15116,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:10.258Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-704466db87c5095567ea",
+              "file": "create-account.spec.js",
+              "line": 54,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível criar uma conta com senha inválida",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 15324,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:22.678Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-fbc8b48710647a85a222",
+              "file": "create-account.spec.js",
+              "line": 63,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível criar uma conta sem nomes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 15925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:24.173Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-9c4ed311c5182b9be3aa",
+              "file": "create-account.spec.js",
+              "line": 73,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível criar uma conta sem informações adicionais",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30008,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Carol Lemes\\Documents\\2. Cursos\\playwright-paypalsandbox\\paypalsandbox-playwright\\actions\\create-account.js",
+                            "column": 63,
+                            "line": 12
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for getByRole('link', { name: 'Criar conta' })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\actions\\create-account.js:12\n\n\u001b[0m \u001b[90m 10 |\u001b[39m         \u001b[36mconst\u001b[39m emailFill \u001b[33m=\u001b[39m email \u001b[33m||\u001b[39m faker\u001b[33m.\u001b[39minternet\u001b[33m.\u001b[39memail({ provider\u001b[33m:\u001b[39m \u001b[32m'yopmail.com'\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Criar conta'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Avançar'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[32m'**/login_info'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'E-mail'\u001b[39m })\u001b[33m.\u001b[39mfill(emailFill)\u001b[0m\n\n\u001b[2m    at Object.createNewAccountFirstStep (C:\\Users\\Carol Lemes\\Documents\\2. Cursos\\playwright-paypalsandbox\\paypalsandbox-playwright\\actions\\create-account.js:12:63)\u001b[22m\n\u001b[2m    at C:\\Users\\Carol Lemes\\Documents\\2. Cursos\\playwright-paypalsandbox\\paypalsandbox-playwright\\tests\\create-account.spec.js:89:22\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:25.925Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Carol Lemes\\Documents\\2. Cursos\\playwright-paypalsandbox\\paypalsandbox-playwright\\test-results\\create-account-Criação-de-conta-inválida-Não-d-b5a2b-ível-criar-uma-conta-sem-informações-adicionais-chromium\\test-failed-1.png"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 16742,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2024-03-13T03:55:59.064Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Carol Lemes\\Documents\\2. Cursos\\playwright-paypalsandbox\\paypalsandbox-playwright\\test-results\\create-account-Criação-de-conta-inválida-Não-d-b5a2b-ível-criar-uma-conta-sem-informações-adicionais-chromium-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-6accc0863887026364e8",
+              "file": "create-account.spec.js",
+              "line": 87,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível criar uma conta sem informações de endereço",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 14341,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:38.013Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-8adcca2c411810284cfd",
+              "file": "create-account.spec.js",
+              "line": 100,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível criar uma conta sem aceitar os termos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 15722,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:38.106Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51a08928fd579b25ab54-ddb595e4c7245ad4f1e7",
+              "file": "create-account.spec.js",
+              "line": 114,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "login.spec.js",
       "file": "login.spec.js",
       "column": 0,
@@ -61,9 +413,9 @@
       "specs": [],
       "suites": [
         {
-          "title": "nome",
+          "title": "Login",
           "file": "login.spec.js",
-          "line": 13,
+          "line": 21,
           "column": 6,
           "specs": [
             {
@@ -79,37 +431,56 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 2,
                       "status": "passed",
-                      "duration": 8312,
+                      "duration": 11799,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "usuario teste:  carol@yopmail.com\n"
-                        },
-                        {
-                          "text": "senha teste:  @123@123\n"
-                        },
-                        {
-                          "text": "usuario funcao:  carol@yopmail.com\n"
-                        },
-                        {
-                          "text": "senha funcao:  carol@yopmail.com\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-03-12T21:17:00.777Z",
+                      "startTime": "2024-03-13T03:55:40.112Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "badc1754af1944f68b2b-998e8abda41117911dd7",
+              "id": "badc1754af1944f68b2b-bf781e5783cf79a40d5a",
               "file": "login.spec.js",
-              "line": 14,
-              "column": 10
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Não deve ser possível logar com um usuário não cadastrado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 8289,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-03-13T03:55:51.914Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-0363ed8d6e5a04639826",
+              "file": "login.spec.js",
+              "line": 30,
+              "column": 9
             }
           ]
         }
@@ -118,11 +489,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-12T21:16:59.865Z",
-    "duration": 10633.734,
-    "expected": 1,
+    "startTime": "2024-03-13T03:55:02.099Z",
+    "duration": 74806.76,
+    "expected": 10,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 0
+    "flaky": 1
   }
 }
