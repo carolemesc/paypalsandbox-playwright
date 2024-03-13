@@ -30,8 +30,6 @@ test.describe('Adicionar cartão na conta', () => {
         const AddCard = await addCard(page)
         await AddCard.addCartThroughLogin()
         await AddCard.insertCardData()
-
-
     })
 
     test('Deve ser possível adicionar um cartão à uma nova conta', async () => {
