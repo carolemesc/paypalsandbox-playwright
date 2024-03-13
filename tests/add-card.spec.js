@@ -20,7 +20,7 @@ test.afterEach(async () => {
 })
 
 test.describe('Adicionar cartão na conta', () => {
-    test.only('Deve ser possível adicionar um cartão à uma conta já criada', async () => {
+    test('Deve ser possível adicionar um cartão à uma conta já criada', async () => {
         const user = `${data.USER.EMAIL}`
         const password = `${data.USER.PASSWORD}`
         const Login = await login(page)
@@ -31,7 +31,7 @@ test.describe('Adicionar cartão na conta', () => {
         await AddCard.addCartThroughLogin()
         await AddCard.insertCardData()
 
-        
+
     })
 
     test('Deve ser possível adicionar um cartão à uma nova conta', async () => {
