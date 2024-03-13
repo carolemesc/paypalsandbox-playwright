@@ -8,8 +8,8 @@ let page
 
 test.beforeEach(async ({ browser }) => {
     page = await browser.newPage()
-    await page.goto(data.APP.URL)
-    await page.waitForURL(data.APP.URL)
+    await page.goto(`${data.APP.URL}br/home`)
+    await page.waitForURL(`${data.APP.URL}br/home`)
     const Cookie = await login(page)
     await Cookie.addCookie(page)
 })
@@ -84,7 +84,7 @@ test.describe('Criação de conta inválida', () => {
         await expect(page.getByText('Informe o sobrenome da mãe.')).toBeVisible()
     })
 
-    test.only('Não deve ser possível criar uma conta sem informações adicionais', async () => {
+    test('Não deve ser possível criar uma conta sem informações adicionais', async () => {
         const Create = await createAccount(page)
         await Create.createNewAccountFirstStep()
         await Create.createNewAccountSecondStep()

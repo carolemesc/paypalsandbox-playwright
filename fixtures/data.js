@@ -1,6 +1,6 @@
 export default {
     APP: {
-        URL: 'https://www.sandbox.paypal.com/br/home',
+        URL: 'https://www.sandbox.paypal.com/',
     },
     USER: {
         EMAIL: 'carol@yopmail.com',

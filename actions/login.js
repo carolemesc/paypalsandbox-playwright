@@ -3,6 +3,7 @@ import { expect } from "@playwright/test"
 /** @param {import('@playwright/test').Page} page */
 const Login = async (page) => {
     async function addCookie() {
+        await page.waitForTimeout(2000)
         await page.locator('#acceptAllButton').click()
         await expect(page.locator('#acceptAllButton')).toBeHidden()
         await page.waitForTimeout(2000)

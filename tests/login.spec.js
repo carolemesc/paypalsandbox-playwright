@@ -8,8 +8,8 @@ let page
 
 test.beforeEach(async ({ browser }) => {
     page = await browser.newPage()
-    await page.goto(data.APP.URL)
-    await page.waitForURL(data.APP.URL)
+    await page.goto(`${data.APP.URL}br/home`)
+    await page.waitForURL(`${data.APP.URL}br/home`)
     const Cookie = await login(page)
     await Cookie.addCookie(page)
 })
