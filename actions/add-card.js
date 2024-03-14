@@ -39,6 +39,7 @@ const AddCard = async (page) => {
     }
 
     async function addCartThroughLogin() {
+        await removeCard()
         await page.getByRole('link', { name: 'Adicionar cartão ou banco' }).click()
         await page.waitForURL('**/accounts/new')
         await page.locator('.transfer-list-primaryText.test_cardPrimaryText:has-text("Adicione um cartão")').click()
@@ -46,16 +47,17 @@ const AddCard = async (page) => {
     }
 
     async function removeCard() {
-        const hasCard = await page.locator('.fi_list_item.cw-header__link cardFI__cardRowItem.css-ne5nyt-links_base-text_body_strong-secondary-text_body_strong').isVisible()
+        await page.waitForURL('**/myaccount/summary**')
+        const hasCard = await page.locator('.fi_list_item__details').first().isVisible()
         if (hasCard) {
-            await page.locator('.fi_list_item.cw-header__link cardFI__cardRowItem.css-ne5nyt-links_base-text_body_strong-secondary-text_body_strong').click()
+            await page.locator('.fi_list_item__details').first().click()
             await page.waitForURL('**/money/cards/**')
             await page.getByRole('link', { name: 'Remover cartão' }).click()
             await page.getByRole('button', { name: 'Remover este cartão' }).click()
             await page.waitForURL('**/remove/success')
             await page.getByRole('link', { name: 'Concluído' }).click()
             await page.waitForURL('**/myaccount/money/')
-            await page.goto(`${data.APP.URL}/myaccount/summary`)
+            await page.goto(`${data.APP.URL}br/home`)
         }
 
     }

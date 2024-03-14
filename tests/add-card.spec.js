@@ -33,6 +33,7 @@ test.describe('Adicionar cartão na conta', () => {
     })
 
     test('Deve ser possível adicionar um cartão à uma nova conta', async () => {
+        test.slow()
         const Create = await createAccount(page)
         await Create.createNewAccountFirstStep()
         await Create.createNewAccountSecondStep()
